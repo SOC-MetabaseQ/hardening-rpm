@@ -992,7 +992,7 @@ echo -e "${BLUE}3.4 Network Configuration - TCP Wrappers${NC}"
 #Ensure TCP Wrappers is installed
 echo
 echo -e "${RED}3.4.1${NC} Ensure TCP Wrappers is installed"
-yum install tcp_wrappers
+yum install -y tcp_wrappers
 policystatus=$?
 if [[ "$policystatus" -eq 0 ]]; then
   echo -e "${GREEN}Remediated:${NC} Ensure TCP Wrappers is installed"
